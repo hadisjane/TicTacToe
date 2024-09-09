@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Крестики-нолики</title>
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+	<div id="loading-screen">
+		<div class="spinner"></div>
+	</div>
+
+	<div id="main-content" style="display: none;">
+		<header>
+			<button id="themeToggle" class="btn-primary">Темная тема</button>
+			<button id="backButton" class="btn-primary">Назад в Лобби</button>
+		</header>
+		<div class="stats-container">
+			<table>
+				<tr>
+					<th>Х</th>
+					<th>О</th>
+					<th>Ничья</th>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+		<div class="container">
+			<div class="game-container">
+				<h1>Крестики-нолики</h1>
+				<div class="board" id="board">
+					<div class="cell" data-index="0"></div>
+					<div class="cell" data-index="1"></div>
+					<div class="cell" data-index="2"></div>
+					<div class="cell" data-index="3"></div>
+					<div class="cell" data-index="4"></div>
+					<div class="cell" data-index="5"></div>
+					<div class="cell" data-index="6"></div>
+					<div class="cell" data-index="7"></div>
+					<div class="cell" data-index="8"></div>
+				</div>
+				<button id="restartButton" class="btn-primary">Начать заново</button>
+			</div>
+		</div>
+
+	</div>
+	<script src="/scripts/darktheme.js"></script>
+	<script src="/scripts/singleplayer.js"></script>
+	<script src="/scripts/loadingscreen.js"></script>
+	<script src="/scripts/btns.js"></script>
+</body>
+
+</html>
